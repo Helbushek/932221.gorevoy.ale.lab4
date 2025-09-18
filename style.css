@@ -7,7 +7,14 @@
 
 header
 {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: fit-content;
 	background: #507299;
+	margin: 0;
+	z-index: 1;
+
 	padding-top: 7px;
     padding-bottom: 5px;
     padding-left: 14%;
@@ -28,7 +35,7 @@ footer
 	margin-right: auto;
 	
 	max-width: 70%;
-	
+	margin-top: 4vw;
 	display: flex;
 }
 
@@ -79,10 +86,7 @@ footer
 	
 	text-align:justify;
     
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px;
 
 }
 
@@ -142,9 +146,9 @@ footer
 {
 	position: fixed;
 
-	margin-top: 2vw;
+	margin-top: 0vw;
 	margin-bottom: 20px;
-	margin-left: 65%;
+	margin-left: 55%;
 }
 
 #sideBlock
@@ -153,15 +157,12 @@ footer
 	
 	padding: 20px 20px 15px 20px;
 	
-	margin-top: 20px;
+	margin-top: 1vw;
 	
 	background-color: white;  
     border: 1px solid #d0d0d0;
     
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
 }
 
 #sideBlock > p
@@ -209,23 +210,28 @@ footer
 	#content
 	{
 		display: block;
+		margin-top: 13vw;
 	}
 	
 	#sideMenu
 	{
+		display: flex;
+		flex-wrap: wrap;
 		width: 85%;
 		margin-left: 15%;
 	}
-		
 	
 	#sideMenu > p
 	{
 		display: inline-block;
 		padding:5px;
     }
-	
-	#textBlock:first-child
+
+	#mainContent
 	{
-		margin-left: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 }
